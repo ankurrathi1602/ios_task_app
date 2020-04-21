@@ -34,4 +34,6 @@ class ThirdCustomCell: UITableViewCell {
         views.layer.masksToBounds = false
         views.layer.cornerRadius = 5
     }
+    
+    
 }

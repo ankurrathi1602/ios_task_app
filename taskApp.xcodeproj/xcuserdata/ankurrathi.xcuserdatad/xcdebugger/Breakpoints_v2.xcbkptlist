@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BF0D16E4-CB3B-48A2-B25E-883BBBE88341"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32D0EB91-4C6D-4BBE-A5DB-3D1E60CD82BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskApp/CustomCell/RecentPaymentCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "RecentPaymentCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "32D0EB91-4C6D-4BBE-A5DB-3D1E60CD82BA - 7a35e08e3335b25c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskApp.RecentPaymentCell.__allocating_init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; taskApp.RecentPaymentCell"
+                  moduleName = "taskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankurrathi/Documents/taskApp/taskApp/CustomCell/RecentPaymentCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "32D0EB91-4C6D-4BBE-A5DB-3D1E60CD82BA - e006943916330831"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskApp.RecentPaymentCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; taskApp.RecentPaymentCell"
+                  moduleName = "taskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankurrathi/Documents/taskApp/taskApp/CustomCell/RecentPaymentCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  uuid = "32D0EB91-4C6D-4BBE-A5DB-3D1E60CD82BA - c8bbfe86c658ddbe"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskApp.RecentPaymentCell.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;taskApp.RecentPaymentCell&gt;"
+                  moduleName = "taskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankurrathi/Documents/taskApp/taskApp/CustomCell/RecentPaymentCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "32D0EB91-4C6D-4BBE-A5DB-3D1E60CD82BA - 3c118e84577ceb15"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskApp.RecentPaymentCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;taskApp.RecentPaymentCell&gt;"
+                  moduleName = "taskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankurrathi/Documents/taskApp/taskApp/CustomCell/RecentPaymentCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "32D0EB91-4C6D-4BBE-A5DB-3D1E60CD82BA - 38d6ecc5c0658454"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskApp.RecentPaymentCell.__deallocating_deinit"
+                  moduleName = "taskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankurrathi/Documents/taskApp/taskApp/CustomCell/RecentPaymentCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF5ADA97-2ADD-41B9-A89B-3536661BAB39"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskApp/CustomCell/RecentPaymentCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8757155-B7D9-4E2C-A299-E291AA14C9F0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskApp/CustomCell/RecentPaymentCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "viewBackground(views:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65EB8D60-13B1-4709-8153-3B6BEB880EFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "taskApp/CustomCell/CustomCellTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "CustomCellTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "65EB8D60-13B1-4709-8153-3B6BEB880EFD - d032ed107e85c60c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskApp.CustomCellTableViewCell.__allocating_init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; taskApp.CustomCellTableViewCell"
+                  moduleName = "taskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankurrathi/Documents/taskApp/taskApp/CustomCell/CustomCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "65EB8D60-13B1-4709-8153-3B6BEB880EFD - 69a267a76307b052"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskApp.CustomCellTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; taskApp.CustomCellTableViewCell"
+                  moduleName = "taskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankurrathi/Documents/taskApp/taskApp/CustomCell/CustomCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "65EB8D60-13B1-4709-8153-3B6BEB880EFD - e57e722d494aadc4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskApp.CustomCellTableViewCell.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;taskApp.CustomCellTableViewCell&gt;"
+                  moduleName = "taskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankurrathi/Documents/taskApp/taskApp/CustomCell/CustomCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "65EB8D60-13B1-4709-8153-3B6BEB880EFD - 56305308cd830eb3"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskApp.CustomCellTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;taskApp.CustomCellTableViewCell&gt;"
+                  moduleName = "taskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankurrathi/Documents/taskApp/taskApp/CustomCell/CustomCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "65EB8D60-13B1-4709-8153-3B6BEB880EFD - 3fc12275d6eab86a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "taskApp.CustomCellTableViewCell.__deallocating_deinit"
+                  moduleName = "taskApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankurrathi/Documents/taskApp/taskApp/CustomCell/CustomCellTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

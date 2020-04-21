@@ -21,6 +21,11 @@ class firstCustomCell: UITableViewCell {
         pictureView.image = picture
         balanceView.text = "Wallet Balance: ₹\(balance)"
         
+        addButton.backgroundColor = .clear
+        addButton.layer.cornerRadius = 5
+        addButton.layer.borderWidth = 1
+        addButton.layer.borderColor = #colorLiteral(red: 0, green: 0.1432859898, blue: 0.366879344, alpha: 1)
+        
         viewBackground(views: firstCardView)
         
     }
@@ -32,7 +37,6 @@ class firstCustomCell: UITableViewCell {
         views.layer.masksToBounds = false
         views.layer.cornerRadius = 5
     }
-   
     
     
     
