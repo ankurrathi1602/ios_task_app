@@ -29,7 +29,7 @@ class MobileViewCell: UITableViewCell {
         self.addBottomLine(textField: amountTextField)
              
         viewBackground(views: mobileView)
-              
+        
     }
     
     // view background configurations

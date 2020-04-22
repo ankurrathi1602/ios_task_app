@@ -13,6 +13,8 @@ class RecentPaymentCell: UITableViewCell {
     
     @IBOutlet weak var recentPaymentCell: UIView!
     
+    
+    
     @IBOutlet weak var pictureView: UIImageView!
     
     @IBOutlet weak var topLabelView: UILabel!

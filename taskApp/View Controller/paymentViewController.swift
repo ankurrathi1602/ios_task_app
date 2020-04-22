@@ -1,17 +1,17 @@
 //
-//  MobileRehargeController.swift
+//  paymentViewController.swift
 //  taskApp
 //
-//  Created by ankur rathi on 21/04/20.
+//  Created by ankur rathi on 22/04/20.
 //  Copyright © 2020 ankur rathi. All rights reserved.
 //
 
 import UIKit
 
-class MobileRehargeController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class paymentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var mobileView: UITableView!
-
+    
+    @IBOutlet weak var paymentView: UITableView!
     
     
     let picImages: [UIImage] = [UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!,UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!]
@@ -24,34 +24,20 @@ class MobileRehargeController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        // Do any additional setup after loading the view.
     }
-
-     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return picImages.count + 2
+        return picImages.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 0{
-            let cell = (tableView.dequeueReusableCell(withIdentifier: "MobileViewCell", for: indexPath)) as! MobileViewCell
-            cell.configure()
-            return cell
-        }
-        else if indexPath.row > 1{
-            let cell = (tableView.dequeueReusableCell(withIdentifier: "RecentPaymentCell", for: indexPath)) as! RecentPaymentCell
-            cell.configure(picture: picImages[indexPath.row - 2], topLabel: topLabel[indexPath.row - 2], middleLabel: middleLabel[indexPath.row - 2], bottomLabel: bottomLabel[indexPath.row - 2], amount: amount[indexPath.row - 2], status: status[indexPath.row - 2])
-            
-            return cell
-        }else if indexPath.row == 1{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCellTableViewCell", for: indexPath) as! CustomCellTableViewCell
-            
-            cell.paymentConfig(payLabel: "Recent Payment")
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RecentPaymentCell", for: indexPath) as! RecentPaymentCell
+        cell.configure(picture: picImages[indexPath.row], topLabel: topLabel[indexPath.row], middleLabel: middleLabel[indexPath.row], bottomLabel: bottomLabel[indexPath.row], amount: amount[indexPath.row], status: status[indexPath.row])
         
-        return UITableViewCell()
+        return cell
     }
-
+    
+    
 }
