@@ -23,6 +23,11 @@
 		2E479EAE244D7D2B001629E0 /* firstCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E479EAD244D7D2B001629E0 /* firstCustomCell.swift */; };
 		2E479EB3244DC17D001629E0 /* SecondCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E479EB2244DC17D001629E0 /* SecondCustomCell.swift */; };
 		2E479EB5244DC1AE001629E0 /* ThirdCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E479EB4244DC1AE001629E0 /* ThirdCustomCell.swift */; };
+		2E5AFAAC2451AEF400DFE340 /* AddMoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5AFAAB2451AEF400DFE340 /* AddMoneyTableViewCell.swift */; };
+		2E5AFAAE2451AF2000DFE340 /* AddMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5AFAAD2451AF2000DFE340 /* AddMoneyViewController.swift */; };
+		2E5AFAB02451C70700DFE340 /* image7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5AFAAF2451C70600DFE340 /* image7.png */; };
+		2E9F95362450C53F000F28F2 /* image5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F95352450C53F000F28F2 /* image5.png */; };
+		2E9F95382450C5A5000F28F2 /* images3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F95372450C5A5000F28F2 /* images3.png */; };
 		2ED4D96D24500B5F00A90E43 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4D96C24500B5F00A90E43 /* CustomCellTableViewCell.swift */; };
 		2ED4D96F245026F300A90E43 /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4D96E245026F300A90E43 /* paymentViewController.swift */; };
 		2ED4D97124506D6A00A90E43 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4D97024506D6A00A90E43 /* SliderTableViewCell.swift */; };
@@ -47,6 +52,11 @@
 		2E479EAD244D7D2B001629E0 /* firstCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstCustomCell.swift; sourceTree = "<group>"; };
 		2E479EB2244DC17D001629E0 /* SecondCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomCell.swift; sourceTree = "<group>"; };
 		2E479EB4244DC1AE001629E0 /* ThirdCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCustomCell.swift; sourceTree = "<group>"; };
+		2E5AFAAB2451AEF400DFE340 /* AddMoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyTableViewCell.swift; sourceTree = "<group>"; };
+		2E5AFAAD2451AF2000DFE340 /* AddMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyViewController.swift; sourceTree = "<group>"; };
+		2E5AFAAF2451C70600DFE340 /* image7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image7.png; sourceTree = "<group>"; };
+		2E9F95352450C53F000F28F2 /* image5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image5.png; sourceTree = "<group>"; };
+		2E9F95372450C5A5000F28F2 /* images3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images3.png; sourceTree = "<group>"; };
 		2ED4D96C24500B5F00A90E43 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 		2ED4D96E245026F300A90E43 /* paymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
 		2ED4D97024506D6A00A90E43 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
@@ -70,6 +80,7 @@
 				2E3687E7244EB3E00070C485 /* MobileRehargeController.swift */,
 				2E3687EB244EE7DA0070C485 /* offersController.swift */,
 				2ED4D96E245026F300A90E43 /* paymentViewController.swift */,
+				2E5AFAAD2451AF2000DFE340 /* AddMoneyViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -78,6 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				2E3687EF244F01730070C485 /* download.png */,
+				2E5AFAAF2451C70600DFE340 /* image7.png */,
+				2E9F95372450C5A5000F28F2 /* images3.png */,
+				2E9F95352450C53F000F28F2 /* image5.png */,
 				2E3687F2244F23820070C485 /* workinprogress.jpeg */,
 			);
 			path = Images;
@@ -125,6 +139,7 @@
 				2E3687ED244EE8100070C485 /* offersCell.swift */,
 				2ED4D96C24500B5F00A90E43 /* CustomCellTableViewCell.swift */,
 				2ED4D97024506D6A00A90E43 /* SliderTableViewCell.swift */,
+				2E5AFAAB2451AEF400DFE340 /* AddMoneyTableViewCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -200,7 +215,10 @@
 				2E479EA3244D6921001629E0 /* Assets.xcassets in Resources */,
 				2E479EA1244D691F001629E0 /* Main.storyboard in Resources */,
 				2E3687F0244F01740070C485 /* download.png in Resources */,
+				2E9F95382450C5A5000F28F2 /* images3.png in Resources */,
 				2E3687F3244F23820070C485 /* workinprogress.jpeg in Resources */,
+				2E9F95362450C53F000F28F2 /* image5.png in Resources */,
+				2E5AFAB02451C70700DFE340 /* image7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,11 +236,13 @@
 				2ED4D97124506D6A00A90E43 /* SliderTableViewCell.swift in Sources */,
 				2ED4D96F245026F300A90E43 /* paymentViewController.swift in Sources */,
 				2E479EB5244DC1AE001629E0 /* ThirdCustomCell.swift in Sources */,
+				2E5AFAAE2451AF2000DFE340 /* AddMoneyViewController.swift in Sources */,
 				2E3687EE244EE8100070C485 /* offersCell.swift in Sources */,
 				2E3687EC244EE7DA0070C485 /* offersController.swift in Sources */,
 				2E479EB3244DC17D001629E0 /* SecondCustomCell.swift in Sources */,
 				2E479E9E244D691F001629E0 /* ViewController.swift in Sources */,
 				2E479E9A244D691F001629E0 /* AppDelegate.swift in Sources */,
+				2E5AFAAC2451AEF400DFE340 /* AddMoneyTableViewCell.swift in Sources */,
 				2E479E9C244D691F001629E0 /* SceneDelegate.swift in Sources */,
 				2E479EAE244D7D2B001629E0 /* firstCustomCell.swift in Sources */,
 			);

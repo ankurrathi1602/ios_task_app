@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tabViewColor: UIView!
     
+
     let pictures: [UIImage] = [UIImage(named: "wallet")!]
     let Balance: [Int] = [100]
     let upcomingPaymentImages: [UIImage] = [UIImage(named: "electricity")!, UIImage(named: "mobile-payment")!, UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!,UIImage(named: "electricity")!, UIImage(named: "mobile-payment")!, UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!]
@@ -25,6 +26,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        cardTableView.delegate = self
+        cardTableView.dataSource = self
         
     }
     
@@ -105,6 +109,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 1{
+            return 120
+        }
+        return tableView.rowHeight // this will return default height
     }
 
 

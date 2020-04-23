@@ -13,6 +13,7 @@ class SliderTableViewCell: UITableViewCell, UICollectionViewDelegate,UICollectio
     @IBOutlet weak var sliderView: UIView!
     
     @IBOutlet weak var sliderCollectionView: UICollectionView!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,6 +35,7 @@ class SliderTableViewCell: UITableViewCell, UICollectionViewDelegate,UICollectio
         views.layer.shadowOpacity = 0.8
         views.layer.masksToBounds = false
         views.layer.cornerRadius = 5
+    
     }
     
     
@@ -44,15 +46,13 @@ class SliderTableViewCell: UITableViewCell, UICollectionViewDelegate,UICollectio
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
+        
         return cell1
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 325, height: 200)
+        return CGSize(width: 330, height: 130)
     }
     
-
-    
-
 }
