@@ -23,7 +23,7 @@ class paymentViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Payments"
         // Do any additional setup after loading the view.
     }
     

@@ -13,7 +13,8 @@ class AddMoneyViewController: UIViewController, UITableViewDelegate, UITableView
 
     @IBOutlet weak var addMoneyView: UITableView!
     
-    let availableBalance: Int = 100
+    
+    let availableBalance: String = "Available Balance ₹200"
     let bottomViewImage: [UIImage] = [UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!,UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phone")!]
     let bottomLabel: [String] = ["Electricity bill money","Mobile bill money","Phone bill money","train bill money","home bill money","Electricity bill money","Mobile bill money","Phone bill money"]
     let subBottomLabel: [String] = ["Electricity bill money","Mobile bill money","Phone bill money","train bill money","home bill money","Electricity bill money","Mobile bill money","Phone bill money"]
@@ -25,6 +26,8 @@ class AddMoneyViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -39,7 +42,7 @@ class AddMoneyViewController: UIViewController, UITableViewDelegate, UITableView
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "WalletMoney", for: indexPath) as! AddMoneyTableViewCell
             
-            cell.WalletConfigure(availableBalance: "Available Balance ₹\(availableBalance)")
+            cell.WalletConfigure(availableBal: availableBalance)
             return cell
             
         }else if indexPath.row == 1{

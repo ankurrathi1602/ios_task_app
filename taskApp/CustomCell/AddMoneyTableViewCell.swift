@@ -13,7 +13,7 @@ class AddMoneyTableViewCell: UITableViewCell {
     
     @IBOutlet weak var walletMoneyCell: UIView!
     
-    
+
     @IBOutlet weak var amountTextField: UITextField!
     
     @IBOutlet weak var addMoneyCell: UIView!
@@ -36,11 +36,12 @@ class AddMoneyTableViewCell: UITableViewCell {
     
     // configure the Wallet balance View
     
-    func WalletConfigure(availableBalance: String){
+    func WalletConfigure(availableBal: String){
+       
+       
+        availableBalanceLabel.text = availableBal
         
-        availableBalanceLabel.text = availableBalance
-        
-        viewBackground(views: walletMoneyCell)
+    viewBackground(views: walletMoneyCell)
     }
     // Add amount cell
     
@@ -48,6 +49,8 @@ class AddMoneyTableViewCell: UITableViewCell {
         addBottomLine(textField: amountTextField)
         viewBackground(views: addMoneyCell)
     }
+    
+
     
     // Other methods configure cell
     
@@ -84,6 +87,9 @@ class AddMoneyTableViewCell: UITableViewCell {
         
     }
     
+    @IBAction func addMoneyButton(_ sender: Any) {
+        
+    }
     
     
 }

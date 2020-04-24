@@ -14,14 +14,14 @@ class offersController: UIViewController, UITableViewDataSource, UITableViewDele
     
     @IBOutlet weak var offerView: UITableView!
     
-    let picOffer: [UIImage] = [UIImage(named: "discount")!]
+    let picOffer: [UIImage] = [UIImage(named: "brightness-editing")!]
     let offerLabel: [String] = ["100% discount","90% discount","40% discount","70% discount","100% discount","100% discount","90% discount","40% discount","70% discount","100% discount"]
     let offerOneDetail: [String] = ["⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible"]
     let offerTwoDetail: [String] = ["⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "offers"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
