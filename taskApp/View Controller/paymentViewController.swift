@@ -11,8 +11,9 @@ import UIKit
 class paymentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
-    @IBOutlet weak var paymentView: UITableView!
+    @IBOutlet weak var paymentCollectionView: UICollectionView!
     
+    @IBOutlet weak var paymentView: UITableView!
     
     let picImages: [UIImage] = [UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!,UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!]
     let topLabel: [String] = ["Electricity Bill", "Mobile Bill", "Phone Bill", "Train Bill", "Home Rent","Electricity Bill", "Mobile Bill", "Phone Bill", "Train Bill", "Home Rent"]
@@ -38,6 +39,5 @@ class paymentViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         return cell
     }
-    
     
 }

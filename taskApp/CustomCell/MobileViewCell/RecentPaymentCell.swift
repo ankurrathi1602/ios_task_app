@@ -35,6 +35,9 @@ class RecentPaymentCell: UITableViewCell {
         bottomLabelView.text = bottomLabel
         amountView.text = amount
         statusView.text = status
+        if statusView.text == "Failed"{
+        statusView.textColor = .red
+        }
         
            viewBackground(views: recentPaymentCell)
            

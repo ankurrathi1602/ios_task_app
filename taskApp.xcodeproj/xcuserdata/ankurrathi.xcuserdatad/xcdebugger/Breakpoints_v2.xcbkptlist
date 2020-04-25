@@ -125,7 +125,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "viewBackground(views:)"
+            landmarkName = "configure(picture:topLabel:middleLabel:bottomLabel:amount:status:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -141,8 +141,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
             endingLineNumber = "11"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "CustomCellTableViewCell"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "65EB8D60-13B1-4709-8153-3B6BEB880EFD - d032ed107e85c60c"

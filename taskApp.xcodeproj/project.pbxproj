@@ -31,6 +31,10 @@
 		2ED4D96D24500B5F00A90E43 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4D96C24500B5F00A90E43 /* CustomCellTableViewCell.swift */; };
 		2ED4D96F245026F300A90E43 /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4D96E245026F300A90E43 /* paymentViewController.swift */; };
 		2ED4D97124506D6A00A90E43 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4D97024506D6A00A90E43 /* SliderTableViewCell.swift */; };
+		2EEF9827245421BC004287FD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF9825245421BC004287FD /* SWRevealViewController.m */; };
+		2EEF982D245426E0004287FD /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF982C245426E0004287FD /* SideMenuTableViewController.swift */; };
+		2EEF983524545D73004287FD /* PaymentBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF983424545D73004287FD /* PaymentBarViewController.swift */; };
+		2EEF983724545FD3004287FD /* PaymentBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF983624545FD3004287FD /* PaymentBarCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +64,12 @@
 		2ED4D96C24500B5F00A90E43 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 		2ED4D96E245026F300A90E43 /* paymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
 		2ED4D97024506D6A00A90E43 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
+		2EEF9824245421BB004287FD /* taskApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "taskApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		2EEF9825245421BC004287FD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		2EEF9826245421BC004287FD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		2EEF982C245426E0004287FD /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		2EEF983424545D73004287FD /* PaymentBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentBarViewController.swift; sourceTree = "<group>"; };
+		2EEF983624545FD3004287FD /* PaymentBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentBarCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,8 @@
 				2E3687EB244EE7DA0070C485 /* offersController.swift */,
 				2ED4D96E245026F300A90E43 /* paymentViewController.swift */,
 				2E5AFAAD2451AF2000DFE340 /* AddMoneyViewController.swift */,
+				2EEF982C245426E0004287FD /* SideMenuTableViewController.swift */,
+				2EEF983424545D73004287FD /* PaymentBarViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -116,6 +128,7 @@
 		2E479E98244D691F001629E0 /* taskApp */ = {
 			isa = PBXGroup;
 			children = (
+				2EEF982324542197004287FD /* MenuViewController */,
 				2E479EB6244DE4CA001629E0 /* DefaultControllers */,
 				2E3687E6244EB3AF0070C485 /* View Controller */,
 				2E479E9F244D691F001629E0 /* Main.storyboard */,
@@ -131,15 +144,11 @@
 		2E479EB1244DC147001629E0 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				2E479EAD244D7D2B001629E0 /* firstCustomCell.swift */,
-				2E479EB2244DC17D001629E0 /* SecondCustomCell.swift */,
-				2E479EB4244DC1AE001629E0 /* ThirdCustomCell.swift */,
-				2E3687E2244EB1820070C485 /* MobileViewCell.swift */,
-				2E3687E4244EB2730070C485 /* RecentPaymentCell.swift */,
+				2EEF983024545628004287FD /* HomeViewCell */,
+				2EEF983124545670004287FD /* MobileViewCell */,
 				2E3687ED244EE8100070C485 /* offersCell.swift */,
-				2ED4D96C24500B5F00A90E43 /* CustomCellTableViewCell.swift */,
-				2ED4D97024506D6A00A90E43 /* SliderTableViewCell.swift */,
 				2E5AFAAB2451AEF400DFE340 /* AddMoneyTableViewCell.swift */,
+				2EEF983624545FD3004287FD /* PaymentBarCollectionViewCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -151,6 +160,37 @@
 				2E479E9B244D691F001629E0 /* SceneDelegate.swift */,
 			);
 			path = DefaultControllers;
+			sourceTree = "<group>";
+		};
+		2EEF982324542197004287FD /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2EEF9826245421BC004287FD /* SWRevealViewController.h */,
+				2EEF9825245421BC004287FD /* SWRevealViewController.m */,
+				2EEF9824245421BB004287FD /* taskApp-Bridging-Header.h */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
+		2EEF983024545628004287FD /* HomeViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E479EAD244D7D2B001629E0 /* firstCustomCell.swift */,
+				2E479EB2244DC17D001629E0 /* SecondCustomCell.swift */,
+				2E479EB4244DC1AE001629E0 /* ThirdCustomCell.swift */,
+				2ED4D96C24500B5F00A90E43 /* CustomCellTableViewCell.swift */,
+				2ED4D97024506D6A00A90E43 /* SliderTableViewCell.swift */,
+			);
+			path = HomeViewCell;
+			sourceTree = "<group>";
+		};
+		2EEF983124545670004287FD /* MobileViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E3687E2244EB1820070C485 /* MobileViewCell.swift */,
+				2E3687E4244EB2730070C485 /* RecentPaymentCell.swift */,
+			);
+			path = MobileViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +225,7 @@
 				TargetAttributes = {
 					2E479E95244D691F001629E0 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -232,6 +273,7 @@
 				2E3687E3244EB1820070C485 /* MobileViewCell.swift in Sources */,
 				2E3687E5244EB2730070C485 /* RecentPaymentCell.swift in Sources */,
 				2E3687E8244EB3E00070C485 /* MobileRehargeController.swift in Sources */,
+				2EEF983524545D73004287FD /* PaymentBarViewController.swift in Sources */,
 				2ED4D96D24500B5F00A90E43 /* CustomCellTableViewCell.swift in Sources */,
 				2ED4D97124506D6A00A90E43 /* SliderTableViewCell.swift in Sources */,
 				2ED4D96F245026F300A90E43 /* paymentViewController.swift in Sources */,
@@ -240,7 +282,10 @@
 				2E3687EE244EE8100070C485 /* offersCell.swift in Sources */,
 				2E3687EC244EE7DA0070C485 /* offersController.swift in Sources */,
 				2E479EB3244DC17D001629E0 /* SecondCustomCell.swift in Sources */,
+				2EEF9827245421BC004287FD /* SWRevealViewController.m in Sources */,
 				2E479E9E244D691F001629E0 /* ViewController.swift in Sources */,
+				2EEF982D245426E0004287FD /* SideMenuTableViewController.swift in Sources */,
+				2EEF983724545FD3004287FD /* PaymentBarCollectionViewCell.swift in Sources */,
 				2E479E9A244D691F001629E0 /* AppDelegate.swift in Sources */,
 				2E5AFAAC2451AEF400DFE340 /* AddMoneyTableViewCell.swift in Sources */,
 				2E479E9C244D691F001629E0 /* SceneDelegate.swift in Sources */,
@@ -388,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59XKRQVH67;
 				INFOPLIST_FILE = taskApp/Info.plist;
@@ -397,6 +443,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tutorialAnkur.taskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "taskApp/MenuViewController/taskApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -406,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59XKRQVH67;
 				INFOPLIST_FILE = taskApp/Info.plist;
@@ -415,6 +464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tutorialAnkur.taskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "taskApp/MenuViewController/taskApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

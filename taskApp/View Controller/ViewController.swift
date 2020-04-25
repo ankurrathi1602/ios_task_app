@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+
     @IBOutlet weak var cardTableView: UITableView!
     
     @IBOutlet weak var tabViewColor: UIView!
@@ -21,16 +24,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let upcomingPaymentLabel: [String] = ["Electricity Payment Bill", "Mobile bill", "Landline Bill", "Train Bill", "home Rent","Electricity Payment Bill", "Mobile bill", "Landline Bill", "Train Bill", "home Rent"]
     let IdUpcomingPayment: [String] = ["953286166","75763567","87532675","53457446","21538711","953286166","75763567","87532675","53457446","21538711"]
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
+//        if self.revealViewController() != nil {
+//                 menuButton.target = self.revealViewController()
+//                 menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+//                 self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//             }
         cardTableView.delegate = self
         cardTableView.dataSource = self
-        
-        
+
     }
    
+
     
     override func viewDidAppear(_ animated: Bool) {
         
@@ -40,24 +50,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
               nav?.tintColor = UIColor.white
               nav?.isTranslucent = false
               nav?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "menu"), style: .plain, target: self, action: #selector(handleMenuToggle))
+//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "menu"), style: .plain, target: self, action: #selector(handleMenuToggle))
         
         tabViewColor.backgroundColor = UIColor.init(red: 0/255, green: 25/255, blue: 75/255, alpha: 1)
     }
-    @objc func handleMenuToggle(){
-        print("This is toggle Menu!!!!")
-    }
+//    @objc func handleMenuToggle(){
+//        print("This is toggle Menu!!!!")
+//    }
 
-        
-
-        
-    
     // defines how many rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return upcomingPaymentImages.count + 4
     }
     // cell to show
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
         
         if indexPath.row == 0{
             let cell = (tableView.dequeueReusableCell(withIdentifier: "firstCustomCell", for: indexPath) as! firstCustomCell)
