@@ -14,6 +14,9 @@ class offersController: UIViewController, UITableViewDataSource, UITableViewDele
     
     @IBOutlet weak var offerView: UITableView!
     
+    
+    @IBOutlet weak var offerMenuBar: UIBarButtonItem!
+    
     let picOffer: [UIImage] = [UIImage(named: "brightness-editing")!]
     let offerLabel: [String] = ["100% discount","90% discount","40% discount","70% discount","100% discount","100% discount","90% discount","40% discount","70% discount","100% discount"]
     let offerOneDetail: [String] = ["⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible","⤷ Apply as soon as possible"]
@@ -21,6 +24,23 @@ class offersController: UIViewController, UITableViewDataSource, UITableViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.revealViewController() != nil {
+                  offerMenuBar.target = self.revealViewController()
+                  offerMenuBar.action = #selector(SWRevealViewController.revealToggle(_:))
+                  self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+              }
+        
+        
+        
+        let nav = self.navigationController?.navigationBar
+                      nav?.barStyle = .black
+                      nav?.barTintColor = UIColor.init(red: 0/255, green: 25/255, blue: 75/255, alpha: 1)
+                      nav?.tintColor = UIColor.white
+                      nav?.isTranslucent = false
+                      nav?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        //        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "menu"), style: .plain, target: self, action: #selector(handleMenuToggle))
+                
         self.title = "offers"
     }
     

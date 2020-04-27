@@ -1,20 +1,20 @@
 //
-//  SideMenuTableViewController.swift
+//  DemoTableViewController.swift
 //  taskApp
 //
-//  Created by ankur rathi on 25/04/20.
+//  Created by ankur rathi on 27/04/20.
 //  Copyright © 2020 ankur rathi. All rights reserved.
 //
 
 import UIKit
 
-class SideMenuTableViewController: UITableViewController {
+class MenuTableViewController: UITableViewController {
 
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,15 +34,38 @@ class SideMenuTableViewController: UITableViewController {
         return 4
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        if indexPath.row == 0{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell0", for: indexPath)
+            return cell
+        }else if indexPath.row == 1{
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath)
+            return cell
+            
+        }else if indexPath.row == 2{
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath)
+            return cell
+            
+        }else if indexPath.row == 3{
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath)
+            return cell
+            
+        }
         // Configure the cell...
 
-        return cell
+        return UITableViewCell()
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0{
+            return 100
+        }
+        return tableView.rowHeight
+    }
 
     /*
     // Override to support conditional editing of the table view.

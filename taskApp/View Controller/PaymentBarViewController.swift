@@ -10,16 +10,40 @@ import UIKit
 
 class PaymentBarViewController: UIViewController {
 
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     
     @IBOutlet weak var paymenyBarView: UICollectionView!
     
-    let images: [UIImage] = [UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!,UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!]
+    
+    
+    let images: [UIImage] = [UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phoneOne")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!,UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phoneOne")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!]
     let label: [String] = ["Electricity Bill", "Mobile Bill", "Phone Bill", "Train Bill", "Home Rent","Electricity Bill", "Mobile Bill", "Phone Bill", "Train Bill", "Home Rent"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let nav = self.navigationController?.navigationBar
+                      nav?.barStyle = .black
+                      nav?.barTintColor = UIColor.init(red: 0/255, green: 25/255, blue: 75/255, alpha: 1)
+                      nav?.tintColor = UIColor.white
+                      nav?.isTranslucent = false
+                      nav?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+       
+        self.title = "Payments"
+        
+        // menu button controls
+        
+        if self.revealViewController() != nil {
+                        menuButton.target = self.revealViewController()
+                        menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+                        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+                   
+                   self.revealViewController().rearViewRevealOverdraw = 0 // how much of an overdraw can occur when dragging further than 'rearViewRevealWidth' (default 60.0)
+                   self.revealViewController().bounceBackOnOverdraw = false
+                   self.revealViewController().toggleAnimationDuration = 0.5// Duration for the revealToggle animation (default 0.25)
+                   self.revealViewController().rearViewRevealWidth = 270
+                   
+                    }
+        
     }
 
 
@@ -45,16 +69,16 @@ extension PaymentBarViewController: UICollectionViewDelegateFlowLayout {
         
         let collectionViewWidth = collectionView.bounds.width
         
-        return CGSize(width: collectionViewWidth/2-2, height: collectionViewWidth/2-2)
+        return CGSize(width: collectionViewWidth/3, height: collectionViewWidth/3)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 2
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
-        return 2
+        return 4
     }
     
     

@@ -15,7 +15,7 @@ class AddMoneyViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     let availableBalance: String = "Available Balance ₹200"
-    let bottomViewImage: [UIImage] = [UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!,UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phone")!]
+    let bottomViewImage: [UIImage] = [UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phoneOne")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!,UIImage(named: "electricity")!,UIImage(named: "mobile-payment")!,UIImage(named: "phoneOne")!]
     let bottomLabel: [String] = ["Electricity bill money","Mobile bill money","Phone bill money","train bill money","home bill money","Electricity bill money","Mobile bill money","Phone bill money"]
     let subBottomLabel: [String] = ["Electricity bill money","Mobile bill money","Phone bill money","train bill money","home bill money","Electricity bill money","Mobile bill money","Phone bill money"]
     let statusImage: [UIImage] = [UIImage(named: "new")!,UIImage(named: "exclamation")!]
@@ -71,7 +71,7 @@ class AddMoneyViewController: UIViewController, UITableViewDelegate, UITableView
         }else if indexPath.row == 1{
             return 210
         }
-        return 120
+        return 70
     }
        
     

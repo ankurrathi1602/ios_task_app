@@ -14,6 +14,9 @@
 		2E3687EE244EE8100070C485 /* offersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3687ED244EE8100070C485 /* offersCell.swift */; };
 		2E3687F0244F01740070C485 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E3687EF244F01730070C485 /* download.png */; };
 		2E3687F3244F23820070C485 /* workinprogress.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2E3687F2244F23820070C485 /* workinprogress.jpeg */; };
+		2E4146942456BBC1000A5CF0 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4146932456BBC1000A5CF0 /* MenuTableViewController.swift */; };
+		2E4146962456CECA000A5CF0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4146952456CECA000A5CF0 /* ProfileViewController.swift */; };
+		2E4146982456D2AC000A5CF0 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4146972456D2AC000A5CF0 /* ContactViewController.swift */; };
 		2E479E9A244D691F001629E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E479E99244D691F001629E0 /* AppDelegate.swift */; };
 		2E479E9C244D691F001629E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E479E9B244D691F001629E0 /* SceneDelegate.swift */; };
 		2E479E9E244D691F001629E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E479E9D244D691F001629E0 /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 		2E479EAE244D7D2B001629E0 /* firstCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E479EAD244D7D2B001629E0 /* firstCustomCell.swift */; };
 		2E479EB3244DC17D001629E0 /* SecondCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E479EB2244DC17D001629E0 /* SecondCustomCell.swift */; };
 		2E479EB5244DC1AE001629E0 /* ThirdCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E479EB4244DC1AE001629E0 /* ThirdCustomCell.swift */; };
+		2E5598ED2455EA8F00C1A9B2 /* SidebarButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5598EC2455EA8F00C1A9B2 /* SidebarButtonViewController.swift */; };
+		2E5598EF2456001F00C1A9B2 /* profileImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5598EE2456001F00C1A9B2 /* profileImage.png */; };
+		2E5598F1245606BE00C1A9B2 /* moreButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5598F0245606BE00C1A9B2 /* moreButtonViewController.swift */; };
 		2E5AFAAC2451AEF400DFE340 /* AddMoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5AFAAB2451AEF400DFE340 /* AddMoneyTableViewCell.swift */; };
 		2E5AFAAE2451AF2000DFE340 /* AddMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5AFAAD2451AF2000DFE340 /* AddMoneyViewController.swift */; };
 		2E5AFAB02451C70700DFE340 /* image7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5AFAAF2451C70600DFE340 /* image7.png */; };
@@ -32,7 +38,6 @@
 		2ED4D96F245026F300A90E43 /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4D96E245026F300A90E43 /* paymentViewController.swift */; };
 		2ED4D97124506D6A00A90E43 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4D97024506D6A00A90E43 /* SliderTableViewCell.swift */; };
 		2EEF9827245421BC004287FD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF9825245421BC004287FD /* SWRevealViewController.m */; };
-		2EEF982D245426E0004287FD /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF982C245426E0004287FD /* SideMenuTableViewController.swift */; };
 		2EEF983524545D73004287FD /* PaymentBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF983424545D73004287FD /* PaymentBarViewController.swift */; };
 		2EEF983724545FD3004287FD /* PaymentBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF983624545FD3004287FD /* PaymentBarCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +50,9 @@
 		2E3687ED244EE8100070C485 /* offersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = offersCell.swift; sourceTree = "<group>"; };
 		2E3687EF244F01730070C485 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = download.png; path = taskApp/Images/download.png; sourceTree = SOURCE_ROOT; };
 		2E3687F2244F23820070C485 /* workinprogress.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = workinprogress.jpeg; sourceTree = SOURCE_ROOT; };
+		2E4146932456BBC1000A5CF0 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		2E4146952456CECA000A5CF0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2E4146972456D2AC000A5CF0 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		2E479E96244D691F001629E0 /* taskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E479E99244D691F001629E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E479E9B244D691F001629E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +64,9 @@
 		2E479EAD244D7D2B001629E0 /* firstCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstCustomCell.swift; sourceTree = "<group>"; };
 		2E479EB2244DC17D001629E0 /* SecondCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomCell.swift; sourceTree = "<group>"; };
 		2E479EB4244DC1AE001629E0 /* ThirdCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCustomCell.swift; sourceTree = "<group>"; };
+		2E5598EC2455EA8F00C1A9B2 /* SidebarButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarButtonViewController.swift; sourceTree = "<group>"; };
+		2E5598EE2456001F00C1A9B2 /* profileImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage.png; sourceTree = "<group>"; };
+		2E5598F0245606BE00C1A9B2 /* moreButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreButtonViewController.swift; sourceTree = "<group>"; };
 		2E5AFAAB2451AEF400DFE340 /* AddMoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyTableViewCell.swift; sourceTree = "<group>"; };
 		2E5AFAAD2451AF2000DFE340 /* AddMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoneyViewController.swift; sourceTree = "<group>"; };
 		2E5AFAAF2451C70600DFE340 /* image7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image7.png; sourceTree = "<group>"; };
@@ -67,7 +78,6 @@
 		2EEF9824245421BB004287FD /* taskApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "taskApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		2EEF9825245421BC004287FD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		2EEF9826245421BC004287FD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		2EEF982C245426E0004287FD /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		2EEF983424545D73004287FD /* PaymentBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentBarViewController.swift; sourceTree = "<group>"; };
 		2EEF983624545FD3004287FD /* PaymentBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentBarCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,8 +101,11 @@
 				2E3687EB244EE7DA0070C485 /* offersController.swift */,
 				2ED4D96E245026F300A90E43 /* paymentViewController.swift */,
 				2E5AFAAD2451AF2000DFE340 /* AddMoneyViewController.swift */,
-				2EEF982C245426E0004287FD /* SideMenuTableViewController.swift */,
 				2EEF983424545D73004287FD /* PaymentBarViewController.swift */,
+				2E5598EC2455EA8F00C1A9B2 /* SidebarButtonViewController.swift */,
+				2E5598F0245606BE00C1A9B2 /* moreButtonViewController.swift */,
+				2E4146952456CECA000A5CF0 /* ProfileViewController.swift */,
+				2E4146972456D2AC000A5CF0 /* ContactViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -101,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				2E3687EF244F01730070C485 /* download.png */,
+				2E5598EE2456001F00C1A9B2 /* profileImage.png */,
 				2E5AFAAF2451C70600DFE340 /* image7.png */,
 				2E9F95372450C5A5000F28F2 /* images3.png */,
 				2E9F95352450C53F000F28F2 /* image5.png */,
@@ -137,6 +151,7 @@
 				2E479EA2244D6921001629E0 /* Assets.xcassets */,
 				2E479EA4244D6921001629E0 /* LaunchScreen.storyboard */,
 				2E479EA7244D6921001629E0 /* Info.plist */,
+				2E4146932456BBC1000A5CF0 /* MenuTableViewController.swift */,
 			);
 			path = taskApp;
 			sourceTree = "<group>";
@@ -260,6 +275,7 @@
 				2E3687F3244F23820070C485 /* workinprogress.jpeg in Resources */,
 				2E9F95362450C53F000F28F2 /* image5.png in Resources */,
 				2E5AFAB02451C70700DFE340 /* image7.png in Resources */,
+				2E5598EF2456001F00C1A9B2 /* profileImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +289,7 @@
 				2E3687E3244EB1820070C485 /* MobileViewCell.swift in Sources */,
 				2E3687E5244EB2730070C485 /* RecentPaymentCell.swift in Sources */,
 				2E3687E8244EB3E00070C485 /* MobileRehargeController.swift in Sources */,
+				2E4146962456CECA000A5CF0 /* ProfileViewController.swift in Sources */,
 				2EEF983524545D73004287FD /* PaymentBarViewController.swift in Sources */,
 				2ED4D96D24500B5F00A90E43 /* CustomCellTableViewCell.swift in Sources */,
 				2ED4D97124506D6A00A90E43 /* SliderTableViewCell.swift in Sources */,
@@ -281,14 +298,17 @@
 				2E5AFAAE2451AF2000DFE340 /* AddMoneyViewController.swift in Sources */,
 				2E3687EE244EE8100070C485 /* offersCell.swift in Sources */,
 				2E3687EC244EE7DA0070C485 /* offersController.swift in Sources */,
+				2E5598ED2455EA8F00C1A9B2 /* SidebarButtonViewController.swift in Sources */,
 				2E479EB3244DC17D001629E0 /* SecondCustomCell.swift in Sources */,
 				2EEF9827245421BC004287FD /* SWRevealViewController.m in Sources */,
+				2E4146942456BBC1000A5CF0 /* MenuTableViewController.swift in Sources */,
 				2E479E9E244D691F001629E0 /* ViewController.swift in Sources */,
-				2EEF982D245426E0004287FD /* SideMenuTableViewController.swift in Sources */,
+				2E4146982456D2AC000A5CF0 /* ContactViewController.swift in Sources */,
 				2EEF983724545FD3004287FD /* PaymentBarCollectionViewCell.swift in Sources */,
 				2E479E9A244D691F001629E0 /* AppDelegate.swift in Sources */,
 				2E5AFAAC2451AEF400DFE340 /* AddMoneyTableViewCell.swift in Sources */,
 				2E479E9C244D691F001629E0 /* SceneDelegate.swift in Sources */,
+				2E5598F1245606BE00C1A9B2 /* moreButtonViewController.swift in Sources */,
 				2E479EAE244D7D2B001629E0 /* firstCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

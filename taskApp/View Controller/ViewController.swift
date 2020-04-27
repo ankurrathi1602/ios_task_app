@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
 
     let pictures: [UIImage] = [UIImage(named: "wallet")!]
-    let upcomingPaymentImages: [UIImage] = [UIImage(named: "electricity")!, UIImage(named: "mobile-payment")!, UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!,UIImage(named: "electricity")!, UIImage(named: "mobile-payment")!, UIImage(named: "phone")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!]
+    let upcomingPaymentImages: [UIImage] = [UIImage(named: "electricity")!, UIImage(named: "mobile-payment")!, UIImage(named: "phoneOne")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!,UIImage(named: "electricity")!, UIImage(named: "mobile-payment")!, UIImage(named: "phoneOne")!,UIImage(named: "train")!,UIImage(named: "icons8-home-30")!]
     let upcomingPaymentLabel: [String] = ["Electricity Payment Bill", "Mobile bill", "Landline Bill", "Train Bill", "home Rent","Electricity Payment Bill", "Mobile bill", "Landline Bill", "Train Bill", "home Rent"]
     let IdUpcomingPayment: [String] = ["953286166","75763567","87532675","53457446","21538711","953286166","75763567","87532675","53457446","21538711"]
     
@@ -30,11 +30,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
        
-//        if self.revealViewController() != nil {
-//                 menuButton.target = self.revealViewController()
-//                 menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-//                 self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-//             }
+        if self.revealViewController() != nil {
+                 menuButton.target = self.revealViewController()
+                 menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+                 self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+            self.revealViewController().rearViewRevealOverdraw = 0 // how much of an overdraw can occur when dragging further than 'rearViewRevealWidth' (default 60.0)
+            self.revealViewController().bounceBackOnOverdraw = false
+            self.revealViewController().toggleAnimationDuration = 0.5// Duration for the revealToggle animation (default 0.25)
+            self.revealViewController().rearViewRevealWidth = 270
+            
+             }
         cardTableView.delegate = self
         cardTableView.dataSource = self
 
@@ -51,7 +57,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
               nav?.isTranslucent = false
               nav?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 //        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "menu"), style: .plain, target: self, action: #selector(handleMenuToggle))
-        
+        self.title = "Home"
         tabViewColor.backgroundColor = UIColor.init(red: 0/255, green: 25/255, blue: 75/255, alpha: 1)
     }
 //    @objc func handleMenuToggle(){

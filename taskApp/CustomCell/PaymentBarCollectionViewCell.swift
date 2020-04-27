@@ -14,6 +14,8 @@ class PaymentBarCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var labelPayment: UILabel!
 
+    @IBOutlet weak var imageMore: UIImageView!
     
+    @IBOutlet weak var labelMore: UILabel!
     
 }
